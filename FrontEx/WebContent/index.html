@@ -13,7 +13,6 @@ crossorigin="anonymous"></script>
 
 	<!-- 구글폰트  -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-	<!-- 나중에 css 추가분 [ font-family: 'Open Sans', sans-serif; ] -->
 	<!-- 아이콘 -->
 	<link rel = "icon" type = "image/png" href = "imgs/kaguya.jpg">
 	
@@ -30,12 +29,12 @@ crossorigin="anonymous"></script>
 		</div>
 		<div class="navbar__menu">
 			<ul class="navbar__menu">
-				<li class="navbar__menu__item">Home</li>
-				<li class="navbar__menu__item">About</li>
-				<li class="navbar__menu__item">Skills</li>
-				<li class="navbar__menu__item">My work</li>
-				<li class="navbar__menu__item">Testimonials</li>
-				<li class="navbar__menu__item">Contact</li>
+				<li class="navbar__menu__item active">Home</li>
+				<li class="navbar__menu__item active">About</li>
+				<li class="navbar__menu__item active">Skills</li>
+				<li class="navbar__menu__item active">My work</li>
+				<li class="navbar__menu__item active">Testimonials</li>
+				<li class="navbar__menu__item active">Contact</li>
 			</ul>
 		
 		</div>
@@ -44,15 +43,15 @@ crossorigin="anonymous"></script>
 	
 	
 	<!-- About -->
-	<section id = "Home">
+	<section id = "Home" class  = "section">
 		<img src="imgs/UMR.png" 
 		alt="UMR Photo" class="home__avatar" />
 		
 		<h1 class="home__title"> 착한정식이의 홈페이지에 오신걸 <br /> 환영합니다. </h1>
 		<h2 class="home__description"> 기획자 출신 개발자 지망생 </h2>
-		<button> contact me </button>
+		<button class = "home__contact"> contact me </button>
 	</section>
-	<section id = "about">
+	<section id = "about" class  = "section">
 		<h1> About me </h1>
 		<p> 오늘도 개인적인 취미와 관심사를 조금 더 표현하고 싶은 목적으로 웹페이징 공부를 하고 있는 착한정식이입니다.</p>
 		<p> 덕후이기 때문에 하고 싶은 일은 많습니다. 이제 할 줄만 알면 되겠네요 </p>
@@ -61,7 +60,9 @@ crossorigin="anonymous"></script>
 				<div class="major__icon">
 					<i class="fab fa-html5"></i>
 				</div>
-				<div class="major__title"></div>
+				<div class="major__title">
+					HTML5
+				</div>
 				<div class="major__description">
 					<br / > 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
 				
@@ -72,7 +73,9 @@ crossorigin="anonymous"></script>
 				<div class="major__icon">
 					<i class="fab fa-html5"></i>
 				</div>
-				<div class="major__title"></div>
+				<div class="major__title">
+					JAVA
+				</div>
 				<div class="major__description">
 					<br / > 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
 				
@@ -83,7 +86,9 @@ crossorigin="anonymous"></script>
 				<div class="major__icon">
 					<i class="fab fa-html5"></i>
 				</div>
-				<div class="major__title"></div>
+				<div class="major__title">
+					Drink EARL GREY
+				</div>
 				<div class="major__description">
 					<br / > 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
 				
@@ -95,13 +100,15 @@ crossorigin="anonymous"></script>
 		<div class="about__jobs">
 			<div class="job">
 				<img src="imgs/koba.jpg" alt="" class="job__logo" />
-				<p class="job__name"> 게임 기획 </p>
-				<p class="job__period"> 2015.07~2019.07</p>
+				<div class="job__description">
+					<p class="job__name"> 게임 기획 </p>
+					<p class="job__period"> 2015.07~2019.07</p>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- skills -->
-	<section id = "skills">
+	<section id = "skills" class  = "section">
 		<h1> Skills </h1>
 		<h2> 스킬 & 어트리뷰트 </h2>
 		<p> 사실 프로그래머로서 공부한건 학원이 전부입니다. </p>
@@ -193,7 +200,7 @@ crossorigin="anonymous"></script>
 
 
 	<!-- work -->	
-	<section id = "work">
+	<section id = "work" class  = "section">
 		<h1> My work </h1>
 		<h3> Projects </h3>
 		<div class="work__categories">
@@ -222,7 +229,7 @@ crossorigin="anonymous"></script>
 		</div>
 	</section>
 	<!-- testimonials -->
-	<section id = "testimonials">
+	<section id = "testimonials" class  = "section">
 		<h1> Testimonials </h1>
 		<h3> 나에 대한 한 마디 </h3>
 		<div class="testimonials">
@@ -248,7 +255,7 @@ crossorigin="anonymous"></script>
 	</section>
 	
 	<!-- contact -->
-	<section id = "contact">
+	<section id = "contact" class  = "section">
 		<h1 class = "contact__title"> Let's talk </h1>
 		<h3 class = "contact__email"> sk7556@naver.com </h3>
 		<div class="contact__links">
