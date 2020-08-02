@@ -150,7 +150,10 @@ button {
 .navbar__menu__item {
 	padding : 8px 12px;
 	margin : 0;
-	
+	color : var(--color-white);
+	cursor : pointer;
+	border : 1px solid transparent;
+	border-radius : var(--size-border-radius);
 }
 
 
@@ -158,12 +161,13 @@ button {
 	border: 1px solid var(--color-white);
 	background-color: var(--color-dark-pink);
 	border-radius: var(--size-border-radius);	
+	border-color : var(--color-white);
 }
 
 .navbar__toggle-btn{
 	position: absolute;
-	right: 30px;
-	top: 30px;
+	right: 15px;
+	top: 15px;
 	display: none;
 	font-size: 40px;
 	color: var(--color-white);
@@ -177,6 +181,7 @@ button {
 }
 
 .home__avatar {
+	margin : 20px  0 0 0;
 	width : 400px;
 	height : 250px;
 	border-radius: 50%;
@@ -348,7 +353,7 @@ button {
 	text-align : center;
 }
 
-.category__btn.active, 
+.category__btn.selected,
 .category__btn:hover{
 	background-color: var(--color-orange);
 	color: var(--color-white);
@@ -439,7 +444,7 @@ button {
 	display: block;
 	position: relative;
 	content: '';
-	width: 25px;
+	width: 50px;
 	height: 2px;
 	background-color : var(--color-white);
 	margin-left:210px;
@@ -527,24 +532,51 @@ button {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px){
-	.navbar__toggle-btn{
+	.navbar__toggle-btn {
 		display : block;
+		color : var(--color-white);
 	}
 	
+	
 	#Home { 
-		padding: 340px 40px 40px 40px;
+		padding: 40px 40px 40px 40px;
+		/* toggle 시 padding-top 300px 추가 */
+	}
+	
+	.section.plus {
+		padding : 300px 0 0 0 ;
 	}
 	
 	#navbar{
 		flex-direction: column;
 		align-items: flex-start;
 		display: flex;
+		background-color : var(--color-pink);
 	}
 	
-	.navbar__menu{
+	#navbar.selected {
+		opacity : 90%;
+	}
+	
+	#navbar.navbar--dark {
+		padding: 6px;
+	}
+	
+	.navbar_menu_div {
 		flex-direction: column;
 		text-align: center;
 		width: 100%;
+	}
+	
+	.navbar__menu{
+		display : none;  /* toggle 시 변경 */
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.navbar__menu.selected{
+		display : block;
 	}
 	
 	.navbar__logo{

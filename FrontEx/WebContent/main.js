@@ -24,7 +24,7 @@ navbarMenu.addEventListener('click', () =>{
 	if(link == null){
 		return;
 	}
-	
+	navbarMenu.classList.remove('selected');
 	scollIntoView(link);
 	
 });
@@ -87,6 +87,14 @@ workBtnContainer.addEventListener('click', (e)=>{
 	if(filter == null){
 		return;
 	}
+	
+	//Remove selection from the previous item and select the navbar
+	const active = document.querySelector('.category__btn.selected');
+	active.classList.remove('selected');
+	
+	const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+	e.target.classList.add('selected');
+	
 	projectContainer.classList.add('anim-out');
 	
 	setTimeout(()=> {
@@ -99,11 +107,21 @@ workBtnContainer.addEventListener('click', (e)=>{
 			}
 		});
 	}, 300);
-		
-		
-	
 	
 });
+
+const toggleButton = document.querySelector('.navbar__toggle-btn');
+const section = document.querySelector('.section');
+
+	toggleButton.addEventListener('click', ()=>{
+		
+		console.log('작동');
+		navbar.classList.toggle('selected');
+		navbarMenu.classList.toggle('selected');
+		section.classList.toggle('plus');
+		
+	});
+	
 
 
 
