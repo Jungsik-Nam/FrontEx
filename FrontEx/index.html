@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Jungsik's Homepage </title>
+	<meta name = "viewport" content = "width = device-width, initial-scale=1.0" />
+	<meta name = "description" content = "Homepage of Jungsik" >
+	<meta name = "author" content = "Jungsik">
+	
+	<!-- 폰트어썸 -->
+	<script src="https://kit.fontawesome.com/92ff86bedc.js"
+crossorigin="anonymous"></script>
+
+	<!-- 구글폰트  -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- 아이콘 -->
+	<link rel = "icon" type = "image/png" href = "imgs/kaguya.jpg">
+	
+	<link rel = "stylesheet" href = "style.css">
+	<script src = "main.js" defer></script>	
+	
+</head>
+<body>
+	<!-- navbar -->
+	<nav id = "navbar">
+		<div class="navbar__logo">
+			<a href="#"> Jungsik </a>
+			<!-- Toggle button -->
+			<button class="navbar__toggle-btn">
+				<i class="fab fa-reddit-alien"></i>
+			</button>
+		</div>
+		<div class = "navbar_menu_div">
+			<ul class="navbar__menu">
+				<li class="navbar__menu__item" data-link="#Home">Home</li>
+				<li class="navbar__menu__item" data-link="#about">About</li>
+				<li class="navbar__menu__item" data-link="#skills">Skills</li>
+				<li class="navbar__menu__item" data-link="#work">My work</li>
+				<li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+				<li class="navbar__menu__item" data-link="#contact">Contact</li>
+			</ul>
+		</div>
+		
+	</nav>
+	
+	
+	<!-- About -->
+	<section id = "Home" class  = "section">
+		<div id = "HomeContainer" class = "HomeContainer">
+			<img src="imgs/UMR.png" 
+			alt="UMR Photo" class="home__avatar" />
+			
+			<h1 class="home__title"> 착한정식이의 홈페이지에 오신걸 <br /> 환영합니다. </h1>
+			<h2 class="home__description"> 기획자 출신 개발자 지망생 </h2>
+			<button class = "home__contact" data-link="#contact"> contact me </button>
+		</div>
+	</section>
+	<section id = "about" class  = "section section__container">
+		<div id = "aboutContainer">
+		<h1> About me </h1>
+		<p> 오늘도 개인적인 취미와 관심사를 조금 더 표현하고 싶은 목적으로 웹페이징 공부를 하고 있는 착한정식이입니다.</p>
+		<p> 덕후이기 때문에 하고 싶은 일은 많습니다. 이제 할 줄만 알면 되겠네요 </p>
+		<div class="about__majors">
+			<div class="major">	
+				<div class="major__icon">
+					<i class="fab fa-html5"></i>
+				</div>
+				<div class="major__title">
+					HTML5
+				</div>
+				<div class="major__description">
+					<br/> 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
+				
+				</div>
+			
+			</div>
+			<div class="major">	
+				<div class="major__icon">
+					<i class="fab fa-html5"></i>
+				</div>
+				<div class="major__title">
+					JAVA
+				</div>
+				<div class="major__description">
+					<br/> 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
+				
+				</div>
+			
+			</div>
+			<div class="major">	
+				<div class="major__icon">
+					<i class="fab fa-html5"></i>
+				</div>
+				<div class="major__title">
+					Drink EARL GREY
+				</div>
+				<div class="major__description">
+					<br/> 그림은 그리지 못하고 컴퓨터가 대신 그리게 요청해보고 있습니다. 
+				
+				</div>
+			</div>
+			
+		</div> <!-- End Major -->
+		<div class="about__majors">
+		</div>
+		<div class="about__jobs">
+			<div class="job">
+				<img src="imgs/koba.jpg" alt="" class="job__logo" />
+				<div class="job__description">
+					<p class="job__name"> 게임 기획 </p>
+					<p class="job__period"> 2015.07~2019.07</p>
+				</div>
+			</div>
+		</div>
+		</div> <!-- End about container -->
+	</section>
+	<!-- skills -->
+	<section id = "skills" class  = "section">
+		<div class="section__container">
+			<h1> Skills </h1>
+			<h2> 스킬 & 어트리뷰트 </h2>
+			<p> 사실 프로그래머로서 공부한건 학원이 전부입니다. </p>
+			<p> 이전 게임 회사를 다니며 언리얼 엔진을 활용하여 </p>
+			<p> 프로젝트를 진행하고 개인 여행 시뮬레이터를 만들어 본 경험이 있습니다. </p>
+			<p> API를 활용하는데 관심이 있어 Spring & Java & MySQL을 활용하여 </p>
+			<p> 게임 전적 간소화 페이지를 만들어보았습니다. </p>
+			<div class="skillset">
+				<div class="skillset__left">
+					<h3 class="skillset__title"> Skills </h3>
+					<div class="skill">
+						<div class="skill__description">
+							<span> JAVA </span>
+							<span> 70%  </span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value" style = "width: 70%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill__description">
+							<span> HTML/CSS </span>
+							<span> 50%  </span>
+						</div>
+						<div class="skill__bar">
+						<div class="skill__value" style = "width: 50%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill__description">
+							<span> JAVASCRIPT </span>
+							<span> 30%  </span>
+						</div>
+						<div class="skill__bar">
+						<div class="skill__value" style = "width: 30%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill__description">
+							<span> JSP </span>
+							<span> 50%  </span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value" style = "width: 50%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill__description">
+							<span> MYSQL </span>
+							<span> 70%  </span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value" style = "width: 70%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill__description">
+							<span> Python </span>
+							<span> 20%  </span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value" style = "width: 20%"></div>
+						</div>
+					</div>
+				</div> <!-- END skill left -->
+				<div class="skillset__right">
+					<div class="tools">
+						<h3 class="skillset__title"> Tools </h3>
+						<ul class="tools__list">
+							<li><span> Eclipse </span></li>
+							<li><span> 언리얼 </span></li>
+							<li><span> 오피스 </span></li>
+							<li><span> 유튜브 </span></li>
+							<li><span> 플레이스테이션 </span></li>
+						</ul>
+					</div>
+					<div class="etc">
+						<h3 class="skillset__title"> etc. </h3>
+						<ul class="tools__list">
+							<li><span> 할줄 아는게 </span></li>
+							<li><span> 회사원들이랑 커피마시기 </span></li>
+						</ul>
+					</div>
+				</div> <!-- End skill right -->
+			</div><!-- End skillset -->
+		</div><!-- End section Container -->
+	</section> 
+
+
+	<!-- work -->	
+	<section id = "work" class  = "section">
+		<h1> My work </h1>
+		<h3> Projects </h3>
+		<div class="work__categories">
+			<button  data-filter = "*" class="category__btn selected"> All <span class = "category__count"> 2 </span> </button>
+			<button  data-filter = "blog" class="category__btn"> blog <span class = "category__count"> 1 </span> </button>
+			<button  data-filter = "unreal" class="category__btn"> Unreal Project <span class = "category__count"> 1 </span> </button>
+		</div>
+		<div class="work__projects">
+			<a href="http://sk7556.blog.me"  target="blank" class = "project" data-type = "blog">
+				<img src = "imgs/MLTD.png" alt = "요시" class="project__img"/>
+					<div class="project__description">
+						<h3> Jungsik blog </h3>
+						<span> Personal Blog </span>
+					</div>
+			</a>
+			<a href="https://www.youtube.com/watch?v=GZ56Nh5vdNY&t=9s" target="blank" class="project" data-type = "unreal">
+				<img src = "imgs/akiba.jpg" alt = "아키바 시뮬레이터" class="project__img"/>
+				<div class="project__description">
+					<h3> Akiba Simulator </h3>
+					<span> Unreal Project </span>
+			</div>
+			</a>
+		</div>
+	</section>
+	<!-- testimonials -->
+	<section id = "testimonials" class  = "section">
+		<div class = "testimonial__container">
+		<h1> Testimonials </h1>
+		<h3> 나에 대한 한 마디 </h3>
+		<div class="testimonials">
+			<div class="testimonial">
+				<div class="testimonial__speech-bubble">
+					<p> 이 친구 물건입니다. 일단 지르고 본다니까요. 책임은 나중에 지면 돼요 </p>
+				</div>
+				<img src="imgs/kaguya.jpg" 
+				alt="executive_professor" 
+				class="testimonial__avatar" />
+			</div>
+		</div>
+		<div class="testimonials">
+			<div class="testimonial">
+				<img src="imgs/JOKER.png" 
+				alt="executive_professor" 
+				class="testimonial__avatar" />
+				<div class="testimonial__speech-bubble">
+					<p> 왜 오늘도 살이 안빠지냐고요? 돈 버는대로 치킨을 시켜먹었으니까 그렇겠죠 </p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<!-- contact -->
+	<section id = "contact" class  = "section">
+		<h1 class = "contact__title"> Let's talk </h1>
+		<h3 class = "contact__email"> sk7556@naver.com </h3>
+		<div class="contact__links">
+			<a href  ="#" target = "_blank">
+				<i class="fab fa-facebook"></i>	
+			</a>
+			<a href="" class="" target = "_blank">
+				<i class="fab fa-twitter-square"></i>
+			</a>
+		</div>
+		<p class="contact__rights"></p>
+	</section>
+	
+	<!-- Up Arrow -->
+	<button class = "arrow-up" id = "arrowButton">
+		<i class="fas fa-arrow-circle-up"></i>
+	</button>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
